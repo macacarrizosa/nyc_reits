@@ -1,0 +1,222 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    background-color: #eee;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', serif;
+    line-height: 1.6
+}
+
+#main-container {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 900px;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+blockquote {
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 1.5em;
+    background: #f9f9f9;
+    border-left: 10px solid #623CEA;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 2.5em;
+    line-height: 0.3em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul.tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs li {
+    background: #623CEA;
+    color: #fafafa;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current {
+    background: #f9f9f9;
+    color: #222;
+}
+
+.tab-content {
+    display: none;
+    background: #f9f9f9;
+    padding: 15px;
+}
+
+.tab-content.current {
+    display: inherit;
+}
+
+ul.tabs-two {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.tabs-two li {
+    background: #623CEA;
+    color: #fafafa;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs-two li.current {
+    background: #f9f9f9;
+    color: #222;
+}
+
+.adventure-container {
+    margin: auto;
+    background: #f9f9f9;
+    width: 100%
+}
+
+.tab-two-content {
+    display: none;
+    background: #f9f9f9;
+    padding: 15px;
+}
+
+.tab-two-content.current {
+    display: inherit;
+}
+
+h2 {
+    display: block;
+    padding: 20px 20px 12px;
+    font: 700 36px 'Open Sans', sans-serif;
+    background: #623CEA;
+    color: #FAFAFA;
+    text-transform: uppercase;
+}
+
+#prompt {
+    padding-left: 20px;
+}
+
+#prompt p {
+    padding-bottom: 8px;
+}
+
+#prompt p b {
+    font-weight: 700;
+}
+
+#options {
+    display: flex;
+    padding: 0px 20px 28px;
+    text-align: center;
+}
+
+#options button {
+    margin: 0px 8px;
+    padding: 8px 20px;
+    background: #00171F;
+    color: #FAFAFA;
+    width: 100%;
+    cursor: pointer;
+}
+
+#options button:hover,
+#options button:active {
+    background: #623CEA;
+    color: #FAFAFA;
+}
+
+#prompt2 {
+    padding-left: 20px;
+}
+
+#prompt2 p {
+    padding-bottom: 8px;
+}
+
+#prompt2 p b {
+    font-weight: 700;
+}
+
+#options2 {
+    display: flex;
+    padding: 0px 20px 28px;
+    text-align: center;
+}
+
+#options2 button {
+    margin: 0px 8px;
+    padding: 8px 20px;
+    background: #00171F;
+    color: #FAFAFA;
+    width: 100%;
+    cursor: pointer;
+}
+
+#options2 button:hover,
+#options2 button:active {
+    background: #623CEA;
+    color: #FAFAFA;
+}
+
+/*margin: 0 auto;*/
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
